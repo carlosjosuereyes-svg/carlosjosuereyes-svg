@@ -1,0 +1,215 @@
+<DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario de Contacto</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <style>
+            /* Estilos generales según las especificaciones */
+            body {
+
+
+                margin: 0;
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+            }
+
+            h1 {
+                font-size: 3.5rem;
+                margin-bottom: 0.5rem;
+                text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+            }
+
+            p {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            /* Contenedor del formulario para darle mejor apariencia */
+            .formulario-contenedor {
+                background-color: rgba(255, 255, 255, 0.4);
+                /* Fondo semitransparente */
+                padding: 2rem 3rem;
+                border-radius: 15px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 400px;
+                border: 2px solid #1d4ed8;
+            }
+
+            label {
+                display: block;
+                margin-top: 1rem;
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+
+            /* Estilos para las cajas de texto */
+            input,
+            textarea {
+                width: 100%;
+                padding: 0.8rem;
+                margin-top: 0.5rem;
+                border: 2px solid #1d4ed8;
+                border-radius: 8px;
+                font-family: 'Gigi', cursive, sans-serif;
+                /* Mantener la misma fuente */
+                color: #1d4ed8;
+                background-color: #f0fdf4;
+                /* Un verde muy claro para el fondo del input */
+                box-sizing: border-box;
+                text-align: center;
+                /* Texto centrado también dentro de las cajas */
+                font-size: 1.1rem;
+            }
+
+            /* Quitar el borde de enfoque por defecto y poner uno azul */
+            input:focus,
+            textarea:focus {
+                outline: none;
+                border-color: #1e3a8a;
+                box-shadow: 0 0 5px #1d4ed8;
+            }
+
+            /* Estilos para el botón */
+            button {
+                margin-top: 2rem;
+                padding: 0.8rem 2.5rem;
+                background-color: #1d4ed8;
+                /* Botón azul */
+                color: #a7f3d0;
+                /* Texto verde en el botón para contrastar */
+                border: none;
+                border-radius: 8px;
+                font-size: 1.5rem;
+                font-family: 'Gigi', cursive, sans-serif;
+                cursor: pointer;
+                transition: transform 0.2s, background-color 0.3s;
+            }
+
+            button:hover {
+                background-color: #1e3a8a;
+                /* Azul más oscuro al pasar el ratón */
+                transform: scale(1.05);
+            }
+
+            /* Estilos para el contenedor de información de ciberseguridad */
+            .info-contenedor {
+                background-color: rgba(255, 255, 255, 0.4);
+                padding: 2rem 3rem;
+                border-radius: 15px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 600px;
+                border: 2px solid #1d4ed8;
+                margin-bottom: 2rem;
+            }
+
+            .info-contenedor h2 {
+                font-size: 2.5rem;
+                margin-top: 0;
+                text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+            }
+
+            ul {
+                list-style-type: none;
+                /* Quitamos las viñetas para que quede perfectamente centrado */
+                padding: 0;
+            }
+
+            li {
+                font-size: 1.3rem;
+                margin-bottom: 0.8rem;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1 class="parpadeo"> Inteligencia Artificial (IA)</h1>
+
+        <!-- Nueva sección de Ciberseguridad -->
+        <div class="info-contenedor">
+            <h2>¿Cómo surgió la IA?</h2>
+            <p style="text-align: justify;">La <strong>historia de la inteligencia artificial</strong> comenzó
+                formalmente en 1956 en la conferencia
+                de
+                Dartmouth, donde John McCarthy acuñó el término. Pasó de sus bases teóricas en los años 50 con Alan
+                Turing a
+                ciclos de gran optimismo, inviernos de financiación y su auge actual gracias al deep learning, redes
+                neuronales y la capacidad de computación masiva.</p>
+
+            <p style="text-align: justify;"><strong>
+                    <li>Fundamentos (1940s-1950s):
+                </strong> Warren McCulloch y Walter Pitts
+                (1943) presentaron el primer
+                modelo de
+                neuronas artificiales. En 1950, Alan Turing propuso el famoso "Test de Turing" para medir la
+                inteligencia de una máquina.</li>
+            </p>
+
+            <p style="text-align: justify;"><strong>
+                    <li>Nacimiento y Optimismo (1956):
+                </strong> John McCarthy, Marvin Minsky
+                y otros establecen la IA
+                como campo
+                científico en la conferencia de Dartmouth, prediciendo grandes avances.</li>
+            </p>
+
+            <p style="text-align: justify;"><strong>
+                    <li>Primeros Logros e "Inviernos" (1960s-1980s):
+                </strong> Se
+                desarrollaron programas como ELIZA
+                (procesamiento de
+                lenguaje). Sin embargo, la limitación de potencia computacional llevó a recortes de financiación,
+                conocidos como "inviernos de la IA".</li>
+            </p>
+
+            <p style="text-align: justify;"><strong>
+                    <li>Auge de Redes Neuronales y IA Moderna (1990s-Actualidad):
+                </strong>
+                En 1997, IBM Deep Blue venció
+                al campeón
+                mundial de ajedrez. El año 2012 marcó la explosión del deep learning y el reconocimiento de imágenes.
+                </li>
+            </p>
+
+            <p style="text-align: justify;"><strong>
+                    <li>IA Generativa (2020s):
+                </strong> La aparición de modelos como GPT-3 y
+                la IA generativa
+                popularizaron herramientas
+                conversacionales avanzadas.</li>
+            </p>
+        </div>
+
+        <p>Este es un diseño de prueba. El formulario no enviará datos.</p>
+
+        <div class="formulario-contenedor">
+            <!-- event.preventDefault() evita que la página se recargue, haciendo el formulario no funcional -->
+            <form onsubmit="event.preventDefault();">
+
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Digite su nombre completo">
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Digite su correo@ejemplo.com">
+
+                <label for="mensaje">Tu Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Digite su mensaje aquí..."></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+
+            </form>
+        </div>
+
+    </body>
+
+    </html>
